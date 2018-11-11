@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GoT Friend Finder</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center"></span> Game of Thrones "Friend" Finder</h1>
+      <hr>
+      <h2 class="text-center">Fill out the survey below to find out who your best GoT match is!</h2>
+      <br>
+
+    <form>
+        <div class="form-group">
+            <input id="name" type="text" class="form-control" placeholder="(Your name here)">
+        </div>
+        <div class="form-group">
+				<input id="photo" type="text" class="form-control" placeholder="(Provide a link to your photo here)">
+		</div>
+        <div class="form-group">
+            <label for="question1">I am honorable to a fault.</label>
+            <select class="custom-select" id="question1">
+                <option disabled selected value>Select the answer that best describes yourself</option>
+                <option value="1">STRONGLY DISAGREE</option>
+                <option value="2">Disagree</option>
+                <option value="3">Somewhwere in the middle</option>
+                <option value="4">Agree</option>
+                <option value="5">STRONGLY AGREE</option>
+            </select>
+        <div class="form-group">
+            <label for="question2">I love big city living.</label>
+            <select class="custom-select" id="question2">
+                <option disabled selected value>Select the answer that best describes yourself</option>
+                <option value="1">STRONGLY DISAGREE</option>
+                <option value="2">Disagree</option>
+                <option value="3">Somewhwere in the middle</option>
+                <option value="4">Agree</option>
+                <option value="5">STRONGLY AGREE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question3">I spend a lot of time on a horse.</label>
+            <select class="custom-select" id="question3">
+                <option disabled selected value>Select the answer that best describes yourself</option>
+                <option value="1">STRONGLY DISAGREE</option>
+                <option value="2">Disagree</option>
+                <option value="3">Somewhwere in the middle</option>
+                <option value="4">Agree</option>
+                <option value="5">STRONGLY AGREE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question4">I am great in physical combat.</label>
+            <select class="custom-select" id="question4">
+                <option disabled selected value>Select the answer that best describes yourself</option>
+                <option value="1">STRONGLY DISAGREE</option>
+                <option value="2">Disagree</option>
+                <option value="3">Somewhwere in the middle</option>
+                <option value="4">Agree</option>
+                <option value="5">STRONGLY AGREE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question5">I don't mind a little dragon flame.</label>
+            <select class="custom-select" id="question5">
+                <option disabled selected value>Select the answer that best describes yourself</option>
+                <option value="1">STRONGLY DISAGREE</option>
+                <option value="2">Disagree</option>
+                <option value="3">Somewhwere in the middle</option>
+                <option value="4">Agree</option>
+                <option value="5">STRONGLY AGREE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question6">I love my family.</label>
+            <select class="custom-select" id="question6">
+                <option disabled selected value>Select the answer that best describes yourself</option>
+                <option value="1">STRONGLY DISAGREE</option>
+                <option value="2">Disagree</option>
+                <option value="3">Somewhwere in the middle</option>
+                <option value="4">Agree</option>
+                <option value="5">STRONGLY AGREE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question7">I am always trying to get to the top.</label>
+            <select class="custom-select" id="question7">
+                <option disabled selected value>Select the answer that best describes yourself</option>
+                <option value="1">STRONGLY DISAGREE</option>
+                <option value="2">Disagree</option>
+                <option value="3">Somewhwere in the middle</option>
+                <option value="4">Agree</option>
+                <option value="5">STRONGLY AGREE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question8">I enjoy a drink, or two.</label>
+            <select class="custom-select" id="question8">
+                <option disabled selected value>Select the answer that best describes yourself</option>
+                <option value="1">STRONGLY DISAGREE</option>
+                <option value="2">Disagree</option>
+                <option value="3">Somewhwere in the middle</option>
+                <option value="4">Agree</option>
+                <option value="5">STRONGLY AGREE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question9">I will do anything to win.</label>
+            <select class="custom-select" id="question9">
+                <option disabled selected value>Select the answer that best describes yourself</option>
+                <option value="1">STRONGLY DISAGREE</option>
+                <option value="2">Disagree</option>
+                <option value="3">Somewhwere in the middle</option>
+                <option value="4">Agree</option>
+                <option value="5">STRONGLY AGREE</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question10">I have no fear.</label>
+            <select class="custom-select" id="question10">
+                <option disabled selected value>Select the answer that best describes yourself</option>
+                <option value="1">STRONGLY DISAGREE</option>
+                <option value="2">Disagree</option>
+                <option value="3">Somewhwere in the middle</option>
+                <option value="4">Agree</option>
+                <option value="5">STRONGLY AGREE</option>
+            </select>
+        </div>
+    </form>
+    <div class="text-center">
+			<button id="submit" type="submit" class="btn btn-success btn-lg">Submit and find your match</button>
+		</div>
+      
+
+    </div>
+
+    <div class="modal" id="matchModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Your Match</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p id="matchName"></p>
+                  <img id="matchImg" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">Available Friends</a>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      
+        $("#submit").on("click", function(event) {
+          event.preventDefault();
+      
+          let newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [
+                    $("#question1").val(),
+					$("#question2").val(),
+					$("#question3").val(),
+					$("#question4").val(),
+					$("#question5").val(),
+					$("#question6").val(),
+					$("#question7").val(),
+					$("#question8").val(),
+					$("#question9").val(),
+					$("#question10").val()
+            ]
+          };
+      
+          console.log(newFriend);
+      
+          let currentURL = window.location.origin;
+
+          $.post(currentURL + "/api/friends", newFriend,
+            function(data) {
+      
+                $("#matchName").text(data.name);
+                $("#matchImg").attr("src", data.photo);
+                $("#matchModal").modal("toggle");
+           
+            });
+      
+        }); 
+      </script>
+
+
+</body>
+</html>
